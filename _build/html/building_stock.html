@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Residential Housing Stock Forecast &#8212; City Light 2020 Load Forecast Manual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/mystnb.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/city_light_logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">City Light 2020 Load Forecast Manual</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Executive Summary
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content.html">
+   Content in Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Building Stock
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Residential Housing Stock Forecast
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/building_stock.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#city-light-premises-vs-seattle-metro-population-and-permits">
+   City Light Premises vs Seattle Metro Population and Permits
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#develop-premise-models-using-arimax">
+   Develop Premise Models Using ARIMAX
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multi-family-premise-arimax-model">
+     Multi-Family Premise ARIMAX Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-family-premise-arimax-model">
+     Single-Family Premise ARIMAX Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-multi-family-and-single-family-predictions-for-2021-2040">
+   Make Multi-Family and Single-Family Predictions for 2021 - 2040
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="residential-housing-stock-forecast">
+<h1>Residential Housing Stock Forecast<a class="headerlink" href="#residential-housing-stock-forecast" title="Permalink to this headline">¶</a></h1>
+<p>The addition of new households is one of the largest drivers of growth for the Residential sector load forecast. To forecast new housing stock additions we estimate an econometric model that links new premises from City Light’s billing system with key macroeconomic indicators for the Seattle Metropolotan area provided from City of Seattle Budget Office (CBO).</p>
+<div class="tip admonition">
+<p class="admonition-title">What’s a Premise?</p>
+<p>A premise is a City Light specific term that refers to a unique identification number that is associated with a specific building structure in the billing system.
+A Residential premise is classified as Residential based on its rate schedule. We count the number of premises based on the number that have received bills over a given period.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="section" id="city-light-premises-vs-seattle-metro-population-and-permits">
+<h2>City Light Premises vs Seattle Metro Population and Permits<a class="headerlink" href="#city-light-premises-vs-seattle-metro-population-and-permits" title="Permalink to this headline">¶</a></h2>
+<p>We will treat 2 indicators from CBO’s economic forecast as exogenous variables to predict new City Light Premise additions:</p>
+<ol class="simple">
+<li><p>Seattle Metro Population</p></li>
+<li><p>Building Permits</p></li>
+</ol>
+<p>These 2 indicators have been graphed in <a class="reference internal" href="#premise-graph"><span class="std std-numref">Figure 1</span></a> below. The Population and Building Permit data show a noticeable downturn after the 2009 recession but have been running strong for the
+last 5 years. City Light’s Mult-Family Premise counts appear to follow a similar economic cycle as Population and Building Permits. Single-Family does not appear to track the macroeconomic indicators as closely as Multi-Family.</p>
+<div class="tip admonition">
+<p class="admonition-title">Multi-Family vs Single-Family Premise Growth</p>
+<p>Growth in Multi-Family building stock has been much stronger than Single-Family in City Light’s service territory since 2009.
+Seattle has limited undeveloped land which limit new Single-Family construction. Seattle has been growing up not out.</p>
+</div>
+<div class="figure align-default" id="premise-graph">
+<div class="cell_output docutils container">
+<img alt="_images/building_stock_8_0.png" src="_images/building_stock_8_0.png" />
+</div>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Quarterly Population and Building Permit data from CBO and Premise counts from City Light billing data for 2005 - 2019.</span><a class="headerlink" href="#premise-graph" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="develop-premise-models-using-arimax">
+<h2>Develop Premise Models Using ARIMAX<a class="headerlink" href="#develop-premise-models-using-arimax" title="Permalink to this headline">¶</a></h2>
+<p>To model both Multi-Family and Single Family premises we will use a type of timeseries model called an <a class="reference external" href="https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average"><strong>ARIMAX</strong></a>. An <a class="reference external" href="https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average"><strong>ARIMAX</strong></a> model provides the machanics needed to handle some tricky properties of timeseries which can’t be performed using a more traditional regression. The <strong>X</strong> in <a class="reference external" href="https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average"><strong>ARIMAX</strong></a> denotes that the model can also except exogenous inputs (independent variables) like Population and Building Stock data.</p>
+<p>We will use a Python package called called <a class="reference external" href="https://www.statsmodels.org/stable/index.html"><strong>Statsmodels</strong></a> which has robust timeseries modelling capabilities. The <a class="reference external" href="https://www.statsmodels.org/stable/index.html"><strong>SARIMAX</strong></a> model can be used to define an <strong>ARIMAX</strong> model which we will do for both Multi-Family and Single-Family in the sections that follow.</p>
+<div class="section" id="multi-family-premise-arimax-model">
+<h3>Multi-Family Premise ARIMAX Model<a class="headerlink" href="#multi-family-premise-arimax-model" title="Permalink to this headline">¶</a></h3>
+<p>We will specify the Multi-Family Premise (<em><strong>MF</strong></em>) model with Building Permits (<em><strong>BP</strong></em>) as an exogenous input. The error is assumed to follow an <em><strong>ARMA</strong></em> (1,1) process. Note that Premise counts and Building Permits are effectively already in first-differences meaning that the <em><strong>I</strong></em> step in the <em><strong>ARIMAX</strong></em> model is not needed. Trial and error was used to determine that (<em><strong>BP</strong></em>) and the 7 quarter lag (<em><strong>BP</strong></em>) had the strongest relationship with (<em><strong>MF</strong></em>).</p>
+<div class="math notranslate nohighlight" id="equation-multi-prem-eq">
+<span class="eqno">(1)<a class="headerlink" href="#equation-multi-prem-eq" title="Permalink to this equation">¶</a></span>\[\begin{split}MF_t = \beta_0 BP_t + \beta_1 BP_{t-7} + \mu_t \\
+(1-\theta_{1} L) \mu_t = (1 - \theta_{1} L) \epsilon_t\end{split}\]</div>
+<div class="figure align-default" id="mf-fit-graph">
+<div class="cell_output docutils container">
+<img alt="_images/building_stock_12_1.png" src="_images/building_stock_12_1.png" />
+</div>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Predicted in-sample quarterly Multi-Family Premise additions based on fitted ARIMAX model.</span><a class="headerlink" href="#mf-fit-graph" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="single-family-premise-arimax-model">
+<h3>Single-Family Premise ARIMAX Model<a class="headerlink" href="#single-family-premise-arimax-model" title="Permalink to this headline">¶</a></h3>
+<p>We will specify the Single-Family Premise (<em><strong>SF</strong></em>) model with Population (<em><strong>POP</strong></em>) an exogenous input. The error term is assumed to follow an <em><strong>ARMA</strong></em> (1,1) process. Trial and error was used to determine that (<em><strong>POP</strong></em>) had the strongest relationship with (<em><strong>SF</strong></em>).</p>
+<div class="math notranslate nohighlight" id="equation-single-prem-eq">
+<span class="eqno">(2)<a class="headerlink" href="#equation-single-prem-eq" title="Permalink to this equation">¶</a></span>\[\begin{split}SF_t = \beta_0 POP_t + \mu_t \\
+(1-\theta_{1} L) \mu_t = (1 - \theta_{1} L) \epsilon_t\end{split}\]</div>
+<div class="figure align-default" id="sf-fit-graph">
+<div class="cell_output docutils container">
+<img alt="_images/building_stock_15_1.png" src="_images/building_stock_15_1.png" />
+</div>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Predicted in-sample quarterly Single-Family Premise additions based on fitted ARIMAX model.</span><a class="headerlink" href="#sf-fit-graph" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="make-multi-family-and-single-family-predictions-for-2021-2040">
+<h2>Make Multi-Family and Single-Family Predictions for 2021 - 2040<a class="headerlink" href="#make-multi-family-and-single-family-predictions-for-2021-2040" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">preds</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">preds</span><span class="p">[</span><span class="s1">&#39;Multi-Family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fit</span><span class="p">[</span><span class="s1">&#39;Multi-Family&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span>
+    <span class="n">start</span><span class="o">=</span><span class="s1">&#39;03-31-2020&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;09-30-2029&#39;</span><span class="p">,</span> <span class="n">exog</span><span class="o">=</span><span class="n">cbo_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">fcast_date</span><span class="p">:,</span> <span class="p">[</span><span class="s1">&#39;Permits&#39;</span><span class="p">,</span> <span class="s1">&#39;Permits_l7&#39;</span><span class="p">]])</span>
+<span class="n">preds</span><span class="p">[</span><span class="s1">&#39;Single-Family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fit</span><span class="p">[</span><span class="s1">&#39;Single-Family&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span>
+    <span class="n">start</span><span class="o">=</span><span class="s1">&#39;03-31-2020&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;09-30-2029&#39;</span><span class="p">,</span> <span class="n">exog</span><span class="o">=</span><span class="n">cbo_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">fcast_date</span><span class="p">:,</span> <span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]])</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">preds</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+    <span class="n">actual</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cbo_scl</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">cbo_scl</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> 
+                     <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Actual </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="n">fitted</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">fit</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">fittedvalues</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">fit</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">fittedvalues</span><span class="p">,</span> 
+                  <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#ffa500&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Fitted </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">preds</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">predicted_mean</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">preds</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">predicted_mean</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                     <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#ffa500&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Predicted </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+    <span class="n">cis</span> <span class="o">=</span> <span class="n">preds</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">conf_int</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+    
+    <span class="n">pred</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">cis</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">cis</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cis</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.075</span><span class="p">)</span>
+    
+    <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1"> Quarterly Premise Counts&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/building_stock_17_0.png" src="_images/building_stock_17_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="markdown.html" title="previous page">Markdown Files</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By John Rudolph<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

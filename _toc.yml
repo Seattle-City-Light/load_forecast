@@ -1,0 +1,10 @@
+- file: intro
+
+- part: Executive Summary
+  chapters:
+  - file: content
+  
+- part: Building Stock 
+  chapters:
+  - file: markdown
+  - file: building_stock

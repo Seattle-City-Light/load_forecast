@@ -1,0 +1,52 @@
+{
+  "building_stock": {
+    "mf_fit_graph": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "mf_fit_graph",
+          "mime_prefix": "application/papermill.record/"
+        },
+        "filenames": {
+          "image/png": "C:\\Users\\rudolpj\\Documents\\load_forecast_book\\_build\\jupyter_execute\\building_stock_12_1.png"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "<Figure size 864x432 with 1 Axes>",
+        "application/papermill.record/image/png": null
+      }
+    },
+    "sf_fit_graph": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "sf_fit_graph",
+          "mime_prefix": "application/papermill.record/"
+        },
+        "filenames": {
+          "image/png": "C:\\Users\\rudolpj\\Documents\\load_forecast_book\\_build\\jupyter_execute\\building_stock_15_1.png"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "<Figure size 864x432 with 1 Axes>",
+        "application/papermill.record/image/png": null
+      }
+    },
+    "premise_graph": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "premise_graph",
+          "mime_prefix": "application/papermill.record/"
+        },
+        "filenames": {
+          "image/png": "C:\\Users\\rudolpj\\Documents\\load_forecast_book\\_build\\jupyter_execute\\building_stock_8_0.png"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "<Figure size 864x864 with 3 Axes>",
+        "application/papermill.record/image/png": null
+      }
+    }
+  }
+}

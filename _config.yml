@@ -1,0 +1,8 @@
+# Book settings
+title: City Light 2020 Load Forecast Manual
+author: John Rudolph
+logo: city_light_logo.png
+
+latex:
+  latex_documents:
+    targetname: book.tex
